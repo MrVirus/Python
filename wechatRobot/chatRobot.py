@@ -22,8 +22,11 @@ def get_response(msg):
 
 @itchat.msg_register(itchat.content.TEXT)
 def tuling_reply(msg):
+    selfdata = itchat.search_friends()
+    if selfdata['UserName'] == msg['FromUserName']:
+        return
     reply = "[我是文诗妹的机器人]" + get_response(msg['Text'])
-    print("回复消息:", reply)
+    print('回复消息:', reply)
     return reply
 
 
