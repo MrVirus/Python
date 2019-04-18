@@ -1,0 +1,4 @@
+{
+	"targetEncodeType": "utf-8",
+	"fileType": [".txt", ".json", ".cs", ".go", ".lua", ".proto", ".csv"]
+}
